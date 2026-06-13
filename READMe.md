@@ -1,108 +1,72 @@
-# Terraform Azure Infrastructure Deployment
+## Project Roadmap
 
-## Overview
+### Phase 1 – Foundation & Infrastructure Deployment ✅ Completed
 
-This project demonstrates Infrastructure as Code (IaC) principles using Terraform to provision and manage Microsoft Azure resources. The infrastructure is deployed through reusable Terraform configurations and is designed to be integrated with GitHub Actions for automated CI/CD workflows.
+* [x] Azure Free Tier Account Setup
+* [x] Terraform Installation & Configuration
+* [x] Azure Provider Configuration
+* [x] Resource Group Deployment
+* [x] Virtual Network (VNet) Deployment
+* [x] Subnet Deployment
+* [x] Network Security Group (NSG) Deployment
+* [x] SSH Security Rule Configuration
+* [x] Public IP Deployment
+* [x] Network Interface Deployment
+* [x] Ubuntu Linux Virtual Machine Deployment
+* [x] Terraform Variables Configuration
+* [x] Terraform Outputs Configuration
+* [x] Git Repository Setup
 
-The goal of this project is to build a scalable, repeatable, and version-controlled cloud infrastructure deployment pipeline while following DevOps and Infrastructure as Code best practices.
+### Phase 2 – CI/CD Integration ✅ Completed
 
-## Architecture
+* [x] GitHub Actions Workflow Creation
+* [x] Terraform Format Validation
+* [x] Terraform Initialization
+* [x] Terraform Validation Checks
+* [x] Automated Workflow Execution on Push
+* [x] Automated Workflow Execution on Pull Requests
 
-The following Azure resources are provisioned:
+### Phase 3 – Remote State Management 🚧 In Progress
 
-* Resource Group
-* Virtual Network (VNet)
-* Subnet
-* Network Security Group (NSG)
-* Public IP Address
-* Network Interface
-* Linux Virtual Machine
-* Storage Account (for Terraform Remote State)
-* GitHub Actions CI/CD Pipeline
+* [ ] Azure Storage Account Creation
+* [ ] Blob Container Configuration
+* [ ] Terraform Backend Configuration
+* [ ] Remote State Migration
+* [ ] State Locking Validation
 
-## Technologies Used
+### Phase 4 – Infrastructure Enhancements 📌 Planned
 
-### Cloud Platform
+* [ ] HTTP Access Rule Configuration (Port 80)
+* [ ] Nginx Installation & Configuration
+* [ ] Web Server Validation
+* [ ] Architecture Diagram Creation
+* [ ] Deployment Screenshots Documentation
+* [ ] Infrastructure Outputs Documentation
 
-* Microsoft Azure
-* AWS
+### Phase 5 – Advanced DevOps Features 📌 Planned
 
-### Infrastructure as Code
+* [ ] Azure Service Principal Configuration
+* [ ] GitHub Secrets Integration
+* [ ] Terraform Plan Stage in CI
+* [ ] Terraform Apply Stage
+* [ ] Terraform Module Refactoring
+* [ ] Network Module Creation
+* [ ] Compute Module Creation
+* [ ] Storage Module Creation
+* [ ] Multi-Environment Deployments (Dev/Test/Prod)
 
-* Terraform
+### Phase 6 – Security & Operations 📌 Planned
 
-### Version Control
+* [ ] Azure Key Vault Integration
+* [ ] Secret Management
+* [ ] Monitoring & Logging
+* [ ] Security Scanning in CI/CD
+* [ ] Cost Optimization & Governance Controls
 
-* Git
-* GitHub
+### Current Status
 
-### CI/CD
+**Project Completion:** ~40%
 
-* GitHub Actions
+**Current Milestone:** Azure Remote State Backend
 
-### Operating System
-
-* Ubuntu Server
-
-## Project Structure
-
-```text
-terraform/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── providers.tf
-├── terraform.tfvars
-└── .terraform.lock.hcl
-```
-
-## Features
-
-* Infrastructure provisioning using Terraform
-* Version-controlled infrastructure definitions
-* Automated deployment workflow support
-* Modular and reusable Terraform configurations
-* Azure cloud resource management
-* Remote state support
-* Secure credential management through GitHub Secrets
-
-## Deployment Workflow
-
-1. Developer pushes code to GitHub.
-2. GitHub Actions validates Terraform configuration.
-3. Terraform plan is generated.
-4. Infrastructure changes are reviewed.
-5. Terraform apply provisions Azure resources.
-6. Outputs are generated for verification.
-
-## Learning Outcomes
-
-Through this project, I gained hands-on experience with:
-
-* Terraform fundamentals
-* Azure resource provisioning
-* Infrastructure as Code design principles
-* State management
-* Azure authentication and authorization
-* GitHub Actions CI/CD pipelines
-* Cloud infrastructure automation
-* Version-controlled infrastructure deployments
-
-## Future Enhancements
-
-* Modular Terraform architecture
-* Multi-environment deployments (Dev, Test, Prod)
-* Terraform remote backend configuration
-* Automated security scanning
-* Cost estimation integration
-* Monitoring and logging integration
-* Azure Key Vault integration
-
-## Author
-
-Veda Vidyadaran
-
-Senior Windows & VMware Analyst with 5+ Years of Experience | SRE | Cloud Infrastructure & Automation
-
-Portfolio: https://portfolio-five-opal-hlh1gnjzc9.vercel.app 
-GitHub: https://github.com/technerd6996
+**Next Goal:** Configure Azure Storage Account and migrate Terraform state from local storage to Azure Blob Storage.
