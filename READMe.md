@@ -25,6 +25,7 @@ The following Azure resources are provisioned:
 ### Cloud Platform
 
 * Microsoft Azure
+* AWS
 
 ### Infrastructure as Code
 
